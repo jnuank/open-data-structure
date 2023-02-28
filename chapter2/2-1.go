@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package chapter2
 
 type ArrayStack[T any] struct {
 	a []T
@@ -57,16 +53,16 @@ func (a *ArrayStack[T]) resize() {
 	a.a = newA
 }
 
-func main() {
-	array := ArrayStack[string]{}
-	array.Add(0, "alice")
-	fmt.Printf("array[0]: %v\n", array.Get(0))
-	fmt.Printf("array capacity: %v\n", array.Capacity())
-	array.Add(1, "bob")
-	fmt.Printf("array[1]: %v\n", array.Get(1))
-	fmt.Printf("array capacity: %v\n", array.Capacity())
-	array.Add(1, "catchy")
-	fmt.Printf("array[1]: %v\n", array.Get(2))
-	fmt.Printf("array capacity: %v\n", array.Capacity())
-
-}
+//func main() {
+//	array := ArrayStack[string]{}
+//	array.Add(0, "alice")
+//	fmt.Printf("array[0]: %v\n", array.Get(0))
+//	fmt.Printf("array capacity: %v\n", array.Capacity())
+//	array.Add(1, "bob")
+//	fmt.Printf("array[1]: %v\n", array.Get(1))
+//	fmt.Printf("array capacity: %v\n", array.Capacity())
+//	array.Add(1, "catchy")
+//	fmt.Printf("array[1]: %v\n", array.Get(2))
+//	fmt.Printf("array capacity: %v\n", array.Capacity())
+//
+//}
